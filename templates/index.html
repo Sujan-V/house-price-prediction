@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI House Price Predictor</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+    <div class="hero">
+
+        <h1>🏠 AI House Price Prediction</h1>
+
+        <p>
+            Predict property prices using Machine Learning & AI Analytics
+        </p>
+
+    </div>
+
+    <div class="dashboard">
+
+        <div class="form-section">
+
+            <h2>Property Details</h2>
+
+            <div class="form-grid">
+
+                <input type="number" id="bedrooms" placeholder="Bedrooms">
+                <input type="number" id="bathrooms" placeholder="Bathrooms">
+
+                <input type="number" id="living_area" placeholder="Living Area">
+
+                <input type="number" id="floors" placeholder="Floors">
+
+                <input type="number" id="condition" placeholder="Condition (1-5)">
+
+                <input type="number" id="grade" placeholder="Grade (1-13)">
+
+                <input type="number" id="built_year" placeholder="Built Year">
+
+                <input type="number" id="zipcode" placeholder="Zipcode">
+
+                <input type="number" id="lat" placeholder="Latitude">
+
+                <input type="number" id="long" placeholder="Longitude">
+
+                <input type="number" id="schools" placeholder="Nearby Schools">
+
+                <input type="number" id="airport" placeholder="Airport Distance">
+
+            </div>
+
+            <button onclick="predictPrice()">
+                Predict Price
+            </button>
+
+        </div>
+
+        <div class="result-section">
+
+            <div class="price-card">
+
+                <h2>Estimated Price</h2>
+
+                <h1 id="price">₹ 0</h1>
+
+                <p id="insight">
+                    AI-generated property insights appear here
+                </p>
+
+            </div>
+
+            <div class="chart-card">
+
+                <canvas id="priceChart"></canvas>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/js/script.js"></script>
+
+</body>
+</html>
